@@ -12,6 +12,7 @@ interface Fields {
   Heading: Field<string>;
   Title: Field<string>;
   Description: Field<string>;
+  ShortDescription: Field<string>;
   'Background Image': ImageField;
 }
 
@@ -33,6 +34,7 @@ const Banner = (props: TextTileProps): JSX.Element => {
       backgroundImage: `url('${backgroundImage}')`,
     };
   }
+
   console.log(backgroundStyle);
   return (
     <div className="page-header pl-4 pr-4 pt-0" style={backgroundStyle}>

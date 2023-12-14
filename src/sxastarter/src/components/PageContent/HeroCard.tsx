@@ -1,11 +1,20 @@
 import React from 'react';
-import { Field, Text, ImageField, RichText, Image } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  Field,
+  Text,
+  ImageField,
+  RichText,
+  Image,
+  LinkField,
+  Link,
+  useSitecoreContext,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   Heading: Field<string>;
   Title: Field<string>;
   Description: Field<string>;
-  Statement: Field<string>;
+  CTALink: LinkField;
   Image: ImageField;
 }
 
@@ -15,6 +24,9 @@ type HeroCardProps = {
 };
 
 export const Default = (props: HeroCardProps): JSX.Element => {
+  const { sitecoreContext } = useSitecoreContext();
+  const linkValue = !sitecoreContext?.pageEditing ? props.fields?.CTALink?.value?.text : '';
+
   return (
     <section className="customer-section pb-10">
       <div className="row align-items-center">
@@ -32,21 +44,13 @@ export const Default = (props: HeroCardProps): JSX.Element => {
           <h5 className="section-subtitle lh-2 ls-md font-weight-normal">
             <Text field={props.fields.Heading} />
           </h5>
-          <h4>
-            <Text field={props.fields.Statement} />
-          </h4>
           <h3 className="section-title lh-1 font-weight-bold">
             <Text field={props.fields.Title} />
           </h3>
-
           <RichText className="section-desc text-grey" field={props.fields.Description} />
-
-          <a
-            className="btn btn-dark btn-link btn-underline ls-m"
-            href="/react/riode/demo-8/pages/about-us/#"
-          >
-            Visit Our Store<i className="d-icon-arrow-right"></i>
-          </a>
+          <Link className="btn btn-dark btn-link btn-underline ls-m" field={props.fields?.CTALink}>
+            {linkValue} <i className="d-icon-arrow-right"></i>
+          </Link>
         </div>
       </div>
     </section>
