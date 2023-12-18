@@ -13,7 +13,7 @@ type WideTextTileProps = {
 };
 
 const WideTextTile = (props: WideTextTileProps): JSX.Element => (
-  <div>
+  <div className="row align-items-center">
     <h5 className="section-subtitle lh-2 ls-md font-weight-normal">
       <Text field={props.fields.Heading} />
     </h5>
