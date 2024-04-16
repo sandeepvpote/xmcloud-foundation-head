@@ -1,0 +1,13 @@
+{
+  "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "m2cloud.Renderings",
+  "items": {
+    "includes": [
+      {
+        "name": "m2cloud.project.rendering",
+        "path": "/sitecore/layout/Renderings/Project/assurex-cloud",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      }
+    ]
+  }
+}
