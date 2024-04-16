@@ -1,8 +1,8 @@
 ﻿---
-ID: "3796ef60-01d9-436f-b433-8b6a105a594e"
-Parent: "76bb6559-a2a3-46f9-b01d-9fab96b1af19"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: "/sitecore/templates/Feature/assurex-cloud/HeroCard/Content"
+ID: "5ea6f1bd-be60-4c91-a308-1bdab73298ec"
+Parent: "ae69bcfc-33f8-4ea6-b95b-5d7470355fe8"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: "/sitecore/templates/Feature/assurex-cloud/components"
 Languages:
 - Language: en
   Versions:
@@ -10,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240416T131219Z
+      Value: 20240416T131021Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,11 +21,11 @@ Languages:
         sitecore\sandeep@assurex.co
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bdaf337d-e955-40b2-88d0-51ebc7ceea3f"
+      Value: "1de4b4be-5bd9-4c8a-9fa8-046f61332cfc"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\sandeep@assurex.co
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240416T131219Z
+      Value: 20240416T154428Z

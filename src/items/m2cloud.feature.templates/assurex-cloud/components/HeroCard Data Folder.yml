@@ -2,7 +2,7 @@
 ID: "d4075c1a-fa3f-4a9f-af2d-bf7758b18e9f"
 Parent: "5ea6f1bd-be60-4c91-a308-1bdab73298ec"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: "/sitecore/templates/Project/assurex-cloud/components/HeroCard Data Folder"
+Path: "/sitecore/templates/Feature/assurex-cloud/components/HeroCard Data Folder"
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon

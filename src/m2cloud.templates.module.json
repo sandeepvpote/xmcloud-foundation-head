@@ -7,11 +7,6 @@
         "name": "m2cloud.feature.templates",
         "path": "/sitecore/templates/Feature/assurex-cloud",
         "allowedPushOperations": "CreateUpdateAndDelete"
-      },
-      {
-        "name": "m2cloud.project.templates",
-        "path": "/sitecore/templates/Project/assurex-cloud/components",
-        "allowedPushOperations": "CreateUpdateAndDelete"
       }
     ]
   }
