@@ -1,7 +1,11 @@
 @import '@sass/abstracts/vars';
 .indent {
   margin: 0 $extralarge-margin;
-  &.col-xxl-12, &.col-xl-12, &.col-lg-12, &.col-md-12, &.col-12 {
+  &.col-xxl-12,
+  &.col-xl-12,
+  &.col-lg-12,
+  &.col-md-12,
+  &.col-12 {
     width: calc(100% - ($extralarge-margin * 2));
   }
 }
@@ -11,3 +15,8 @@
 .indent-bottom {
   margin-bottom: $middle-margin;
 }
+
+.indent-large-top {
+  margin-top: calc($middle-margin * 5);
+}
+
