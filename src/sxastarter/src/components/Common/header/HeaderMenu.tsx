@@ -7,7 +7,7 @@ import ALink from '../custom-link';
 //import SearchBox from '~/components/common/partials/search-box';
 //import LoginModal from '~/components/features/modals/login-modal';
 
-import { headerTransprentList } from '~/utils/data/menu';
+//import { headerTransprentList } from '~/utils/data/menu';
 
 export default function Header(props) {
   const router = useRouter();
