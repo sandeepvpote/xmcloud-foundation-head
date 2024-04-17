@@ -25,7 +25,7 @@ interface RouteFields {
   Title?: Field;
 }
 
-const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
+const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   const { route } = layoutData.sitecore;
   const fields = route?.fields as RouteFields;
   const isPageEditing = layoutData.sitecore.context.pageEditing;

@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
 import {
   Image as JssImage,
-  Link as JssLink,
   RichText as JssRichText,
   ImageField,
   Field,
   LinkField,
-  Text,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
