@@ -3,20 +3,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/no-unescaped-entities */
 'use client';
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
-
-interface Fields {
-  LogoLink: LinkField;
-  DarkThemeLogo: ImageField;
-  LightThemeLogo: ImageField;
-  ContactUs: Array<Contacttype>;
-  QuickLinksTitle: Field<string>;
-  PageLinks: Array<FooterNavigationLink>;
-  CopyrightText: Field<string>;
-  LinkLabel: Field<string>;
-  ImageList: Array<FooterNavigationLink>;
-  NavItems: Array<NavItems>;
-}
+import { Field, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 
 export interface NavItems {
   fields: {
@@ -39,11 +26,6 @@ export interface Contacttype {
     iconcls: Field<string>;
   };
 }
-
-type FooterProps = {
-  params: { [key: string]: string };
-  fields: Fields;
-};
 
 export const Default = () => {
   return (
