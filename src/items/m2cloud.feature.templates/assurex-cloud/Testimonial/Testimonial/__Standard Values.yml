@@ -1,0 +1,38 @@
+﻿---
+ID: "46caaeb1-d5a3-46df-aa5f-6d2c62db343e"
+Parent: "e6d702ea-eba4-44d9-86be-dbdefa6c6a4d"
+Template: "e6d702ea-eba4-44d9-86be-dbdefa6c6a4d"
+Path: "/sitecore/templates/Feature/assurex-cloud/Testimonial/Testimonial/__Standard Values"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: people/32x32/pawn.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{668ADE48-01EE-4917-A8C8-A0AC4DF16F4C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231009T164632Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "abca3cc2-10ce-41db-a388-4e9aad18e24d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231009T164904Z

@@ -1,0 +1,34 @@
+﻿---
+ID: "fbc0eee0-d3e1-4226-8843-bed6dd953fb6"
+Parent: "6f007aa0-32e6-4e9a-b096-0bec35b8e927"
+Template: "6f007aa0-32e6-4e9a-b096-0bec35b8e927"
+Path: "/sitecore/templates/Feature/assurex-cloud/LanguageSwitcher/SiteLanguages/__Standard Values"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230906T122851Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohd.kashif@assurex.co
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohd.kashif@assurex.co
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e4f81bb4-8b25-4777-9681-db34c7616536"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohd.kashif@assurex.co
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230906T122906Z
+    - ID: "e6d53377-3bf0-4412-b01a-230939d8bd05"
+      Hint: Name
+      Value: $name

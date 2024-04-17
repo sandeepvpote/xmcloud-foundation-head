@@ -1,0 +1,33 @@
+﻿---
+ID: "39ecd449-d6d2-4f5d-ad86-c3c593c10614"
+Parent: "c9ecc342-660f-47b6-b181-08a502ab5fce"
+Template: "c9ecc342-660f-47b6-b181-08a502ab5fce"
+Path: "/sitecore/templates/Feature/assurex-cloud/News/NewsFolder/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {C9ECC342-660F-47B6-B181-08A502AB5FCE}
+    {2C424992-A1A7-426D-BB5B-529F926C0219}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071508Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e3118798-7e08-4d81-bb24-349bdaa3c4d6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231004T110359Z

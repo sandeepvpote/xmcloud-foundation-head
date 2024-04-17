@@ -1,0 +1,35 @@
+﻿---
+ID: "9fccdc38-5084-434f-867f-7cfa0d8218ac"
+Parent: "08fa61ac-ed9e-4737-84ea-53fe4822f593"
+Template: "08fa61ac-ed9e-4737-84ea-53fe4822f593"
+Path: "/sitecore/templates/Feature/assurex-cloud/Category Products/Category Folder/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{228F7D15-9498-4B4D-8CBB-BE910F43889A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231012T130942Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b5570422-4af8-4065-9a4f-c825fa80987e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231012T131049Z

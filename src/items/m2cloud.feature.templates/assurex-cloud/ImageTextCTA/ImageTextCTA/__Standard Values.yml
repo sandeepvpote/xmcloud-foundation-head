@@ -1,0 +1,35 @@
+﻿---
+ID: "9967695e-1e8c-4fd1-9eb3-ccf97971db72"
+Parent: "03990ed3-718a-40b6-ada0-8cb40876a1ea"
+Template: "03990ed3-718a-40b6-ada0-8cb40876a1ea"
+Path: "/sitecore/templates/Feature/assurex-cloud/ImageTextCTA/ImageTextCTA/__Standard Values"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: imaging/32x32/fill_selection_h.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231016T113631Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0e65211a-bbd1-42b3-b5df-bf1763a1e5fc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231016T114850Z

@@ -1,0 +1,31 @@
+﻿---
+ID: "fb613dc1-2117-41b1-9f70-4d70c8760798"
+Parent: "7422fae2-421b-4355-bf32-e5b6167f8084"
+Template: "7422fae2-421b-4355-bf32-e5b6167f8084"
+Path: "/sitecore/templates/Feature/assurex-cloud/Signin/Rendering Parameters/Signin/__Standard Values"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: software/32x32/text_code_add.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "129b2c46-5c78-4bb1-8e80-b7fd5c1164a9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231011T125033Z

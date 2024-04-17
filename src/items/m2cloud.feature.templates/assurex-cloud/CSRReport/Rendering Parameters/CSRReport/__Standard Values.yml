@@ -1,0 +1,31 @@
+﻿---
+ID: "0bc4d4fa-e1a3-4fef-90a8-091dbbb50274"
+Parent: "d8673fc4-7090-41fe-b96f-a88ef4fc374b"
+Template: "d8673fc4-7090-41fe-b96f-a88ef4fc374b"
+Path: "/sitecore/templates/Feature/assurex-cloud/CSRReport/Rendering Parameters/CSRReport/__Standard Values"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: software/32x32/text_code_add.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a70eef23-8d2e-43d5-a987-fef60e5b51a9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Mohd Kashif
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240327T072053Z

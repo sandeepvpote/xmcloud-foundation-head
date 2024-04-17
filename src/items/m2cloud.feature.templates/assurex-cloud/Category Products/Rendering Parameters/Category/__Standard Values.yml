@@ -1,0 +1,31 @@
+﻿---
+ID: "b1ac52ed-9ae2-4eca-87c8-1cddf6de39f2"
+Parent: "fb397954-5aeb-457f-84c4-dd613cf9963e"
+Template: "fb397954-5aeb-457f-84c4-dd613cf9963e"
+Path: "/sitecore/templates/Feature/assurex-cloud/Category Products/Rendering Parameters/Category/__Standard Values"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: wordprocessing/32x32/insert_symbol_h.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c271d385-d86c-4ba9-9e91-150c5b6bd6cc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\rekha@assurex.co
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231012T130100Z

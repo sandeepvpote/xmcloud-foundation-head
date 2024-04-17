@@ -1,0 +1,35 @@
+﻿---
+ID: "279ff0ae-942b-40f3-a9f5-cb6b41b8cfda"
+Parent: "8cb4e2a2-2375-4892-86d7-8ddaeb0db5d8"
+Template: "8cb4e2a2-2375-4892-86d7-8ddaeb0db5d8"
+Path: "/sitecore/templates/Feature/assurex-cloud/Banner/Carousel/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{8C51B605-5984-4384-8496-9CF3B425DEB3}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230928T133256Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mohd.kashif@assurex.co
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mohd.kashif@assurex.co
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3ce8e7fa-af63-47b7-8607-f3e2e2ad260f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Mohd Kashif
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240325T102058Z

@@ -4,6 +4,11 @@
   "items": {
     "includes": [
       {
+        "name": "m2cloud.feature.rendering",
+        "path": "/sitecore/layout/Renderings/Feature/assurex-cloud",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
         "name": "m2cloud.project.rendering",
         "path": "/sitecore/layout/Renderings/Project/assurex-cloud",
         "allowedPushOperations": "CreateUpdateAndDelete"

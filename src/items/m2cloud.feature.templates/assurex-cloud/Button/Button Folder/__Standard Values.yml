@@ -1,0 +1,33 @@
+﻿---
+ID: "d608c750-1fd1-4994-96d7-be4e094f3477"
+Parent: "724b04bb-b0e3-4061-953f-cd4dfe701f15"
+Template: "724b04bb-b0e3-4061-953f-cd4dfe701f15"
+Path: "/sitecore/templates/Feature/assurex-cloud/Button/Button Folder/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {4D9D304F-CD88-4F00-9DAF-5D516307368B}
+    {724B04BB-B0E3-4061-953F-CD4DFE701F15}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071508Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c5c19f87-b097-4c39-bad9-0e36cf8e8652"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mohd.kashif@assurex.co
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230901T081010Z
