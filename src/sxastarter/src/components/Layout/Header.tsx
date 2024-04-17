@@ -3,12 +3,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/no-unescaped-entities */
 'use client';
-
+import React from 'react';
 import {
   Field,
   ImageField,
   LinkField,
   Link as JssLink,
+  Text as JssText,
   Image as JssImage,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -173,14 +174,63 @@ export const Default = (props: HeaderProps) => {
 };
 
 export const M2Header = (props: HeaderProps) => {
+  const { sitecoreContext } = useSitecoreContext();
   return (
     <>
       <header className="css-pjfvhq">
-        <div></div>
-        <div className="css-upn7fq"></div>
+        <div>
+          <a aria-label="M2 Exchange" className="css-10oxagg" href="#">
+            <div
+              className="m2-icon undefined css-1i0n0ae"
+              style={{ width: '74px', height: '24px' }}
+              data-testid="logo"
+            >
+              {sitecoreContext.pageState === 'edit' ? (
+                <JssImage field={props.fields?.LightThemeLogo} className="img-responsive" />
+              ) : (
+                <JssLink field={props.fields.LogoLink}>
+                  <JssImage field={props.fields?.LightThemeLogo} />
+                </JssLink>
+              )}
+              {/* <svg fill="#08EBAA" width="74px" height="24px" className="css-1l3vixo">
+                <use xlinkHref="#icon-logo"></use>
+              </svg> */}
+            </div>
+          </a>
+        </div>
+        <div className="css-upn7fq">
+          {props.fields.NavigationLinks.map((navigation) => (
+            <>
+              <span className="css-156k2z1">
+                {sitecoreContext.pageState === 'edit' ? (
+                  <JssLink field={navigation.fields.Link} />
+                ) : (
+                  <a
+                    data-testid={`menu-${navigation.fields.Link?.value?.text}}`}
+                    href={navigation.fields.Link?.value?.href}
+                    className={navigation.fields.Link?.value?.class}
+                  >
+                    <div className="css-1iyoj2o">
+                      <div className="css-1sg2lsz">
+                        <p className="css-lykmnt" color="typePrimary">
+                          {navigation.fields.Link?.value?.text}
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                )}
+              </span>
+            </>
+          ))}
+        </div>
 
         <div className="css-1jssxcu">
           <div className="css-1v3z295">
+            <a target="" className="css-1ulgukf" href="#">
+              <span className="css-1gblbjx" color="text">
+                <JssText field={props.fields.CartText} />
+              </span>
+            </a>
             <button
               className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1q01leq"
               type="button"
@@ -200,6 +250,171 @@ export const M2Header = (props: HeaderProps) => {
           </div>
         </div>
       </header>
+    </>
+  );
+};
+
+export const M2HeaderMobile = (props: HeaderProps) => {
+  //const { sitecoreContext } = useSitecoreContext();
+  //const [menu, setMenu] = useState();
+
+  const menufunc = () => {
+    console.log('on click');
+    const x = document.getElementById('menu-bar');
+    const menu = document.getElementById('menu-icon');
+    const cross = document.getElementById('cross-icon');
+
+    if (x && menu && cross) {
+      if (x.style.display === 'block') {
+        menu.style.display = 'block';
+        x.style.display = 'none';
+        cross.style.display = 'none';
+      } else {
+        x.style.display = 'block';
+        cross.style.display = 'block';
+        menu.style.display = 'none';
+      }
+    }
+  };
+  return (
+    <>
+      <header className="css-pjfvhq">
+        <div>
+          <a aria-label="M2 Exchange" className="css-10oxagg" href="#">
+            <div
+              className="m2-icon undefined css-1i0n0ae"
+              style={{ width: '74px', height: '24px' }}
+              data-testid="logo"
+            >
+              <svg fill="#08EBAA" width="74px" height="24px" className="css-1l3vixo">
+                <use xlinkHref="#icon-logo"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <div className="css-1sg2lsz">
+          <div className="css-1jssxcu">
+            <div className="css-1v3z295">
+              <a target="" className="css-1ulgukf" href="#">
+                <span className="css-1gblbjx" color="text">
+                  {props.fields.CartText.value}
+                </span>
+              </a>
+              <div className="css-1sg2lsz">
+                <div className="m2-icon css-ih24lg" style={{ width: '24px', height: '24px' }}>
+                  <a onClick={() => menufunc()} href="javascript:void(0);" id="menu-icon">
+                    <div className="menu-div"></div>
+                    <div className="menu-div"></div>
+                    <div className="menu-div"></div>
+                  </a>
+                  <a onClick={() => menufunc()} id="cross-icon">
+                    X
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div className="css-olgc7d" style={{ display: 'nones' }}>
+        <div className="css-x7kgwd" id="menu-bar">
+          <div>
+            <div className="css-e3l3cd">
+              <div className="css-6r3fxs">
+                <h1 className="css-tekvn3" color="typePrimary">
+                  Welcome to M2
+                </h1>
+              </div>
+              <div className="css-6r3fxs"></div>
+            </div>
+            <div className="css-upn7fq">
+              <span className="css-156k2z1">
+                <a data-testid="menu-earn" className="css-1427d14" href="#">
+                  <div className="css-1iyoj2o">
+                    <div className="css-1sg2lsz">
+                      <p className="css-lykmnt" color="typePrimary">
+                        Earn
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </span>
+              <span className="css-156k2z1">
+                <a data-testid="menu-smartTrade" className="css-1427d14" href="#">
+                  <div className="css-1iyoj2o">
+                    <div className="css-1sg2lsz">
+                      <p className="css-lykmnt" color="typePrimary">
+                        Smart Trading
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </span>
+              <span className="css-156k2z1">
+                <a data-testid="menu-otc" className="css-1427d14" href="#">
+                  <div className="css-1iyoj2o">
+                    <div className="css-1sg2lsz">
+                      <p className="css-lykmnt" color="typePrimary">
+                        OTC
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </span>
+              <span className="css-156k2z1">
+                <a data-testid="menu-markets" className="css-1427d14" href="#">
+                  <div className="css-1iyoj2o">
+                    <div className="css-1sg2lsz">
+                      <p className="css-lykmnt" color="typePrimary">
+                        Markets
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </span>
+
+              <span className="css-156k2z1">
+                <a data-testid="menu-help-center" className="css-1427d14" href="#">
+                  <div className="css-1iyoj2o">
+                    <div className="css-1sg2lsz">
+                      <p className="css-lykmnt" color="typePrimary">
+                        Help Center
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </span>
+              <span className="css-156k2z1">
+                <a data-testid="menu-help-center" className="css-1427d14" href="#">
+                  <div className="css-1iyoj2o">
+                    <div className="css-1sg2lsz">
+                      <p className="css-lykmnt" color="typePrimary">
+                        M2 UAE
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div className="css-6r3fxs">
+            <button
+              className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1t4yvl7"
+              type="button"
+            >
+              <p className="css-195z8ju">Log In</p>
+            </button>
+            <button
+              className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1lydy3u"
+              type="button"
+            >
+              <p className="css-1uq6dkb">Register</p>
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

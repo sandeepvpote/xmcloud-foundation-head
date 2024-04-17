@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Image as JssImage,
   RichText as JssRichText,
@@ -37,6 +38,8 @@ type SubscribeNewsProps = {
 };
 
 export const Default = (props: SubscribeNewsProps): JSX.Element => {
+  //  const [email, setEmail] = useState('');
+  //  const [requestMsg, setRequestMsg] = useState('');
   return (
     <div className="subscribe-area ptb-60">
       <div className="container ">
@@ -59,8 +62,7 @@ export const Default = (props: SubscribeNewsProps): JSX.Element => {
               id="email"
               placeholder={props.fields.PlaceholderText?.value}
               type="email"
-              /*autocomplete="on"
-              class="MuiInputBase-input form-input"*/
+              className="MuiInputBase-input form-input"
               value=""
             />
             <button className="join-button">{props.fields.ButtonText.value}</button>
@@ -70,7 +72,7 @@ export const Default = (props: SubscribeNewsProps): JSX.Element => {
           <div className="apps">
             <span>{props.fields.DownloadAppLabel.value}</span>
             <div className="app-icon">
-              {props.fields.ImageList.map((img: ImageList, index) => (
+              {props.fields.ImageList.map((img: ImageList, index: number) => (
                 <JssImage key={index} field={img.fields.Icon} />
               ))}
             </div>
