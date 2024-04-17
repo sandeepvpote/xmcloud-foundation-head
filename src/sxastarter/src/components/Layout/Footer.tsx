@@ -3,12 +3,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/no-unescaped-entities */
 'use client';
-import {
-  Field,
-  ImageField,
-  LinkField,
-  useSitecoreContext,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   LogoLink: LinkField;
