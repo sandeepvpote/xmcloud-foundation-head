@@ -73,8 +73,8 @@ export const Default = (props: SubscribeNewsProps): JSX.Element => {
           <div className="apps">
             <span>{props.fields.DownloadAppLabel.value}</span>
             <div className="app-icon">
-              {props.fields.ImageList.map((img: ImageList) => (
-                <JssImage field={img.fields.Icon} />
+              {props.fields.ImageList.map((img: ImageList, index) => (
+                <JssImage key={index} field={img.fields.Icon} />
               ))}
             </div>
           </div>

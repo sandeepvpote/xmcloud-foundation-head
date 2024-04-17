@@ -282,8 +282,8 @@ export const M2EdgeNews = (props: NewsProps): JSX.Element => {
           <span className="experience-sub-text">The Right Choice for Experienced Traders</span>
         </div>
         <div className="experience-img-text">
-          {props.fields.NewsSlides.map((newsItem: NewsSlides) => (
-            <div className="experience-div-image">
+          {props.fields.NewsSlides.map((newsItem: NewsSlides, index) => (
+            <div className="experience-div-image" key={index}>
               {sitecoreContext.pageState === 'edit' ? (
                 <JssImage field={newsItem.fields.Image} />
               ) : (
