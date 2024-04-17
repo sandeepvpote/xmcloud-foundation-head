@@ -4,6 +4,9 @@
 
 1. In an ADMIN terminal:
 
+
+
+
     ```ps1
     .\init.ps1 -InitEnv -LicenseXmlPath "C:\path\to\license.xml" -AdminPassword "DesiredAdminPassword"
     ```
