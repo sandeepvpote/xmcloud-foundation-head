@@ -28,10 +28,10 @@ interface RouteFields {
 const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   const { route } = layoutData.sitecore;
   const fields = route?.fields as RouteFields;
-  const isPageEditing = layoutData.sitecore.context.pageEditing;
+  /*const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing
     ? 'editing-mode'
-    : 'prod-mode home page-template-default page page-id-5 wpb-js-composer js-comp-ver-6.7.0 vc_responsive';
+    : 'prod-mode home page-template-default page page-id-5 wpb-js-composer js-comp-ver-6.7.0 vc_responsive';*/
 
   return (
     <>
