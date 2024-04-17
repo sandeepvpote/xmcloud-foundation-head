@@ -45,7 +45,7 @@ type FooterProps = {
   fields: Fields;
 };
 
-export const Default = (props: FooterProps) => {
+export const Default = () => {
   return (
     <>
       <div className="css-1iufzrx">
@@ -57,7 +57,7 @@ export const Default = (props: FooterProps) => {
   );
 };
 
-export const M2FooterMobile = (props: FooterProps) => {
+export const M2FooterMobile = () => {
   //const { sitecoreContext } = useSitecoreContext();
 
   return (
