@@ -7,7 +7,6 @@ import {
   Field,
   ImageField,
   LinkField,
-  Image as JssImage,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
@@ -52,8 +51,6 @@ type FooterProps = {
 };
 
 export const Default = (props: FooterProps) => {
-  const { sitecoreContext } = useSitecoreContext();
-
   return (
     <>
       <div className="css-1iufzrx">
