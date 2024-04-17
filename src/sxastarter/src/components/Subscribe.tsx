@@ -40,8 +40,6 @@ type SubscribeNewsProps = {
 };
 
 export const Default = (props: SubscribeNewsProps): JSX.Element => {
-  const [email, setEmail] = useState('');
-  const [requestMsg, setRequestMsg] = useState('');
   return (
     <div className="subscribe-area ptb-60">
       <div className="container ">
@@ -61,11 +59,11 @@ export const Default = (props: SubscribeNewsProps): JSX.Element => {
           <div className="col-lg-6 banner-form">
             <input
               aria-describedby="email"
-              autocomplete="on"
               id="email"
               placeholder={props.fields.PlaceholderText?.value}
               type="email"
-              class="MuiInputBase-input form-input"
+              /*autocomplete="on"
+              class="MuiInputBase-input form-input"*/
               value=""
             />
             <button className="join-button">{props.fields.ButtonText.value}</button>
