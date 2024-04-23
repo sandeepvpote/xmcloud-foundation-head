@@ -9,7 +9,7 @@ import {
   Text as JssText,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
-interface Fields { 
+interface Fields {
   Image: ImageField;
   ImageCaption: Field<string>;
   TargetUrl: LinkField;
@@ -38,8 +38,6 @@ type SubscribeNewsProps = {
 };
 
 export const Default = (props: SubscribeNewsProps): JSX.Element => {
-  const [email, setEmail] = useState('');
-  const [requestMsg, setRequestMsg] = useState('');
   return (
     <>
       <div className="subscribe-area ptb-60">
@@ -65,11 +63,10 @@ export const Default = (props: SubscribeNewsProps): JSX.Element => {
             <div className="col-lg-6 banner-form">
               <input
                 aria-describedby="email"
-                autocomplete="on"
                 id="email"
                 placeholder={props.fields.PlaceholderText?.value}
                 type="email"
-                class="MuiInputBase-input form-input"
+                className="MuiInputBase-input form-input"
                 value=""
               />
               <button className="join-button">{props.fields.ButtonText.value}</button>
@@ -105,7 +102,7 @@ export const Default = (props: SubscribeNewsProps): JSX.Element => {
         <span>{props.fields.DownloadAppLabel.value}</span>
         <div className="app-icon" id="app-icon">
           {props.fields.ImageList.map((img: ImageList) => (
-            <JssImage field={img.fields.Icon} />
+            <JssImage field={img.fields.Icon} key={''} />
           ))}
         </div>
       </div>
