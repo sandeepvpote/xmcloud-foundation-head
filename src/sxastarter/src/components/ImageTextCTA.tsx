@@ -1,5 +1,5 @@
 import React from 'react';
-import { 
+import {
   Image as JssImage,
   RichText as JssRichText,
   ImageField,
@@ -101,32 +101,6 @@ export const LeftImageVariant = (props: ImageTextCTAProps): JSX.Element => {
     </>
   );
 };
-
-export const LeftImageVariant2 = (props: ImageTextCTAProps) => {
-  const { sitecoreContext } = useSitecoreContext();
-  return (
-    <>
-      <div className="elevate-main-div">
-        {sitecoreContext.pageState === 'edit' ? (
-          <JssImage field={props.fields.Image} />
-        ) : (
-          <img src={props.fields.Image.value?.src} alt="coin-image" className="coin-image" />
-        )}
-        <div className="elevate-text-btn">
-          <JssRichText
-            field={props.fields.Description}
-            tag="div"
-            className="elevate-heading-text"
-          />
-
-          <span className="elevate-sub-text">{props.fields.Title.value}</span>
-          <button className="elevate-btn">{props.fields.Button.value.text}</button>
-        </div>
-      </div>
-    </>
-  );
-};
-
 
 export const LeftImageVariant2 = (props: ImageTextCTAProps) => {
   const { sitecoreContext } = useSitecoreContext();
