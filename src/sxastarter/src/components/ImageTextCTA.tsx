@@ -114,19 +114,13 @@ export const LeftImageVariant2 = (props: ImageTextCTAProps) => {
           <img src={props.fields.Image.value?.src} alt="coin-image" className="coin-image" />
         )}
         <div className="no-rtl css-1s8meje">
-          <p className="css-i9j0gt" type="regular">
-            MMX Price
-          </p>
+          <p className="css-i9j0gt">MMX Price</p>
           <div className="css-1hlbeeu">
-            <p className="css-18vnx1z" type="regular">
-              $2.10
-            </p>
+            <p className="css-18vnx1z">$2.10</p>
             <span className="css-pc20to" color="#04A544">
-              <span className="no-rtl css-i9j0gt" type="regular">
-                +0.02%
-              </span>
+              <span className="no-rtl css-i9j0gt">+0.02%</span>
             </span>
-            <p className="css-13wc5ff" type="regular" color="textSecondary">
+            <p className="css-13wc5ff" color="textSecondary">
               Last 24h
             </p>
           </div>
