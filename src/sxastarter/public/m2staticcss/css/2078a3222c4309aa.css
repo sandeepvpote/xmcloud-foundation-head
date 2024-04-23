@@ -1636,6 +1636,11 @@ html[dir='rtl'] .rtl-rotate {
   flex-direction: row;
   gap: 8px;
 }
+@media (min-width: 321px) and (max-width: 768px) {
+  .css-fw3j3z {
+    flex-direction: column;
+  }
+}
 .css-em9in {
   display: flex;
   flex-direction: column;
