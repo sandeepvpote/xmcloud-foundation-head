@@ -1,5 +1,5 @@
 import React from 'react';
-import {
+import { 
   Image as JssImage,
   RichText as JssRichText,
   ImageField,
@@ -120,6 +120,57 @@ export const LeftImageVariant2 = (props: ImageTextCTAProps) => {
           />
 
           <span className="elevate-sub-text">{props.fields.Title.value}</span>
+          <button className="elevate-btn">{props.fields.Button.value.text}</button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+
+export const LeftImageVariant2 = (props: ImageTextCTAProps) => {
+  const { sitecoreContext } = useSitecoreContext();
+  return (
+    <>
+      <JssRichText field={props.fields.Description} tag="div" className="elevate-heading-text" />
+      <div className="elevate-main-div">
+        {sitecoreContext.pageState === 'edit' ? (
+          <JssImage field={props.fields.Image} />
+        ) : (
+          <img src={props.fields.Image.value?.src} alt="coin-image" className="coin-image" />
+        )}
+        <div className="no-rtl css-1s8meje">
+          <p className="css-i9j0gt" type="regular">
+            MMX Price
+          </p>
+          <div className="css-1hlbeeu">
+            <p className="css-18vnx1z" type="regular">
+              $2.10
+            </p>
+            <span className="css-pc20to" color="#04A544">
+              <span className="no-rtl css-i9j0gt" type="regular">
+                +0.02%
+              </span>
+            </span>
+            <p className="css-13wc5ff" type="regular" color="textSecondary">
+              Last 24h
+            </p>
+          </div>
+        </div>
+        {/* <img
+          src="https://static.m2.com/resource/static/images/mmx-coin.webp?w=828&q=75"
+          alt="coin-image"
+          className="coin-image"
+        /> */}
+        <div className="elevate-text-btn">
+          {/* <span className="elevate-heading-text">
+            Elevate Your M2 <br /> Experience with <span className="gradient-text">MMX</span>
+          </span> */}
+
+          <span className="elevate-sub-text">
+            {props.fields.Title.value}
+            {/* Enjoy Exclusive Benefits and Enhanced Earnings within the M2 Ecosystem. */}
+          </span>
           <button className="elevate-btn">{props.fields.Button.value.text}</button>
         </div>
       </div>

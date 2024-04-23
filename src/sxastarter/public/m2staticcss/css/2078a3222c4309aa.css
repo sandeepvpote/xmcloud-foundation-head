@@ -1529,12 +1529,14 @@ html[dir='rtl'] .rtl-rotate {
   line-height: 2rem;
   letter-spacing: 0.1px;
   font-family: poppins-medium, sans-serif;
+  margin: auto;
 }
 .css-1uq6dkb {
   font-size: 1.4rem;
   line-height: 2rem;
   letter-spacing: 0.1px;
   font-family: poppins-bold, sans-serif;
+  margin: auto;
 }
 .css-1gblbjx {
   color: rgb(255, 255, 255);
@@ -1542,6 +1544,15 @@ html[dir='rtl'] .rtl-rotate {
   line-height: 2rem;
   letter-spacing: 0.1px;
   font-family: poppins-medium, sans-serif;
+}
+.css-duk6rx {
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  letter-spacing: -3px;
+  font-family: poppins-bold, sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0rem;
 }
 .css-upn7fq {
   display: flex;
@@ -2056,22 +2067,22 @@ html[dir='rtl'] .rtl-rotate {
     flex-direction: column;
   }
 }
+@media (min-width: 321px) and (max-width: 768px) {
+  #menu-bar {
+    display: none;
+  }
+  #cross-icon {
+    display: none;
+    font-size: 17px;
+    font-family: system-ui;
+    width: 20px;
+  }
 
-#menu-bar {
-  display: none;
+  .menu-div {
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0;
+    border-radius: 10px;
+  }
 }
-#cross-icon {
-  display: none;
-  font-size: 17px;
-  font-family: system-ui;
-  width: 20px;
-}
-
-.menu-div {
-  width: 20px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  margin: 4px 0;
-  border-radius: 10px;
-}
-

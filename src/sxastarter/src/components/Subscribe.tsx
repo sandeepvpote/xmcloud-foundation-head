@@ -9,7 +9,7 @@ import {
   Text as JssText,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
-interface Fields {
+interface Fields { 
   Image: ImageField;
   ImageCaption: Field<string>;
   TargetUrl: LinkField;
@@ -38,56 +38,78 @@ type SubscribeNewsProps = {
 };
 
 export const Default = (props: SubscribeNewsProps): JSX.Element => {
-  //  const [email, setEmail] = useState('');
-  //  const [requestMsg, setRequestMsg] = useState('');
+  const [email, setEmail] = useState('');
+  const [requestMsg, setRequestMsg] = useState('');
   return (
-    <div className="subscribe-area ptb-60">
-      <div className="container ">
-        <div className="row align-items-center">
-          <div className="row-lg-6">
-            <div className="banner-content">
-              <JssRichText field={props.fields.HeaderText} tag="span" className="banner-title" />
-              {/* <span className="banner-title">
+    <>
+      <div className="subscribe-area ptb-60">
+        <div className="container ">
+          <div className="row align-items-center">
+            <div className="row-lg-6">
+              <div className="banner-content">
+                <JssRichText
+                  field={props.fields.HeaderText}
+                  tag="span"
+                  className="banner-title"
+                  id="banner-title"
+                />
+                {/* <span className="banner-title">
                 <span className="gradient-text">Boost</span> your <br /> Crypto Portfolio
               </span> */}
-              <br />
-              <span>{props.fields.Description.value}</span>
-              {/* <span>Sign up now and start earning more </span> */}
+                <br />
+                <span className="banner-subText">{props.fields.Description.value}</span>
+                {/* <span>Sign up now and start earning more </span> */}
+              </div>
             </div>
-          </div>
 
-          <div className="col-lg-6 banner-form">
-            <input
-              aria-describedby="email"
-              id="email"
-              placeholder={props.fields.PlaceholderText?.value}
-              type="email"
-              className="MuiInputBase-input form-input"
-              value=""
-            />
-            <button className="join-button">{props.fields.ButtonText.value}</button>
-            {/* <button className="join-button">Join Now</button> */}
-            {/* <label>{requestMsg}</label> */}
-          </div>
-          <div className="apps">
-            <span>{props.fields.DownloadAppLabel.value}</span>
-            <div className="app-icon">
-              {props.fields.ImageList.map((img: ImageList, index: number) => (
-                <JssImage key={index} field={img.fields.Icon} />
-              ))}
+            <div className="col-lg-6 banner-form">
+              <input
+                aria-describedby="email"
+                autocomplete="on"
+                id="email"
+                placeholder={props.fields.PlaceholderText?.value}
+                type="email"
+                class="MuiInputBase-input form-input"
+                value=""
+              />
+              <button className="join-button">{props.fields.ButtonText.value}</button>
+              {/* <button className="join-button">Join Now</button> */}
+              {/* <label>{requestMsg}</label> */}
             </div>
+            {/* <div className="apps">
+                <span>Download M2 app</span>
+                <div className="app-icon">
+                  <img
+                    src="https://static.m2.com/resource/static/images/body-app-store.svg?w=384&q=75"
+                    alt="app"
+                  />
+                  <img
+                    src="https://static.m2.com/resource/static/images/google-play-badge.svg?w=384&q=75"
+                    alt="app"
+                  />
+                </div>
+              </div> */}
           </div>
         </div>
+        <div>
+          {/* <JssImage field={props.fields.ComponentImage} className="crypto-image" /> */}
+          <img
+            src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7d/8e/25/7d8e251b-b9d2-dfcb-88c4-87c2cd7eb8b0/5e732b74-cc8f-4ef5-9b87-80534430e112_18.png/643x0w.jpg"
+            alt="crypto-image"
+            className="crypto-image"
+            id="crypto-image"
+          />
+        </div>
       </div>
-      <div>
-        <JssImage field={props.fields.ComponentImage} className="crypto-image" />
-        {/* <img
-          src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7d/8e/25/7d8e251b-b9d2-dfcb-88c4-87c2cd7eb8b0/5e732b74-cc8f-4ef5-9b87-80534430e112_18.png/643x0w.jpg"
-          alt="crypto-image"
-          className="crypto-image"
-        /> */}
+      <div className="apps">
+        <span>{props.fields.DownloadAppLabel.value}</span>
+        <div className="app-icon" id="app-icon">
+          {props.fields.ImageList.map((img: ImageList) => (
+            <JssImage field={img.fields.Icon} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
