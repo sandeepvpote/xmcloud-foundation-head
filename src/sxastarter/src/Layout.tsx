@@ -120,8 +120,8 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
                 {route && <Placeholder name="headless-main" rendering={route} />}
               </main>
             </div>
+            {route && <Placeholder name="headless-footer" rendering={route} />}
           </div>
-          {route && <Placeholder name="headless-footer" rendering={route} />}
           {/* <div className="css-1iufzrx">
             <div className="css-62o2z6">
               <footer className="css-n1ampd"></footer>

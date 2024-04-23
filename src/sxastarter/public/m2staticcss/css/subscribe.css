@@ -6,7 +6,7 @@
   margin-top: 2%;
   justify-content: center;
   align-items: center;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
 }
 
 .container {
@@ -59,7 +59,7 @@
 
 .form-input {
   display: flex;
-  width: 100%;
+  width: 110%;
   height: 80px;
   box-sizing: border-box;
   max-height: 52px;
@@ -119,8 +119,8 @@
   background: rgb(8, 235, 170);
   flex-direction: row-reverse;
   position: absolute;
-  top: 530px;
-  left: 573px;
+  top: 30px;
+  left: 217px;
   border: none;
   max-height: 36px;
   padding: 25px 16px;
@@ -165,7 +165,7 @@
     order: 1;
   }
   .join-button {
-    display: block;
+    display: none;
   }
   .apps {
     display: block;
@@ -283,7 +283,7 @@
   position: absolute;
   width: 625px;
   height: 981px;
-  right: -137px;
+  right: -100px;
   margin-top: 150px;
   padding-left: 0%;
 }
@@ -327,7 +327,7 @@
   font-weight: 800;
   font-family: poppins-medium, sans-serif;
   margin-left: 50px;
-  left: 45px;
+  /* left: 45px; */
 }
 
 .line-image {
@@ -369,7 +369,7 @@
 
   .start-trading-btn {
     top: 10px;
-    left: 100px;
+    left: 50px;
     min-width: 64px;
     width: 220px;
   }
@@ -430,6 +430,7 @@
 
 .laptop-image {
   width: 1200px;
+  margin-top: 50px;
 }
 
 .border-text {
@@ -542,6 +543,12 @@ p:last-child {
   background: rgb(23, 17, 51);
   border-radius: 16px;
   padding: 8px 16px;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: -1px;
+  p {
+    margin: 0;
+  }
 }
 .css-i9j0gt {
   font-size: 1.4rem;
@@ -587,28 +594,26 @@ p:last-child {
 }
 
 .elevate-heading-text {
-  padding-left: 0px;
-  padding-top: 0px;
-  position: static;
-
-  text-align: center;
-  margin-top: 190px;
-  font-size: 3.2rem;
-  line-height: 3.6rem;
-  letter-spacing: -1px;
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: left;
+  font-family: poppins-bold, sans-serif;
+  position: absolute;
+  width: 100%;
+  padding-left: 317px;
+  padding-top: 80px;
+  line-height: 1;
 }
 
 .elevate-sub-text {
   color: white;
-  text-align: center;
+  text-align: left;
+  font-size: 20px;
   padding-top: 25px;
   font-family: poppins-regular, sans-serif;
   display: block;
   font-weight: 900;
-  width: 90%;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  letter-spacing: -1px;
 }
 
 .elevate-btn {
@@ -633,6 +638,10 @@ p:last-child {
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
+  .css-1s8meje {
+    top: -20px;
+    left: 100px;
+  }
   .elevate-main-div {
     flex-direction: column;
   }
@@ -640,15 +649,23 @@ p:last-child {
     font-size: 35px;
     text-align: center;
     align-items: center;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    right: -5px;
   }
   .coin-image {
     width: 200px;
     margin: 0px;
+    padding-top: 250px;
   }
   .elevate-sub-text {
     font-size: 1.4rem;
     line-height: 2rem;
     letter-spacing: 0.1px;
+    right: -10px;
+    text-align: center;
   }
   .elevate-btn {
     display: block;
@@ -750,6 +767,7 @@ p:last-child {
 @media (min-width: 321px) and (max-width: 768px) {
   .experience-img-text {
     flex-direction: column;
+    align-items: center;
   }
   .experience-heading-text {
     font-size: 3.2rem;
