@@ -282,29 +282,29 @@ export const M2HeaderMobile = (props: HeaderProps) => {
 
   const [menu, setMenu] = useState(false);
 
-  const menufunc = () => {
-    console.log('On clicked');
-    setMenu(!menu);
-  };
-
   // const menufunc = () => {
-  //   console.log('on click');
-  //   const x = document.getElementById('menu-bar');
-  //   const menu = document.getElementById('menu-icon');
-  //   const cross = document.getElementById('cross-icon');
-
-  //   if (x && menu && cross) {
-  //     if (x.style.display === 'block') {
-  //       menu.style.display = 'block';
-  //       x.style.display = 'none';
-  //       cross.style.display = 'none';
-  //     } else {
-  //       x.style.display = 'block';
-  //       cross.style.display = 'block';
-  //       menu.style.display = 'none';
-  //     }
-  //   }
+  //   console.log('On clicked');
+  //   setMenu(!menu);
   // };
+
+  const menufunc = () => {
+    console.log('on click');
+    const x = document.getElementById('menu-bar');
+    const menu = document.getElementById('menu-icon');
+    const cross = document.getElementById('cross-icon');
+
+    if (x && menu && cross) {
+      if (x.style.display === 'block') {
+        menu.style.display = 'block';
+        x.style.display = 'none';
+        cross.style.display = 'none';
+      } else {
+        x.style.display = 'block';
+        cross.style.display = 'block';
+        menu.style.display = 'none';
+      }
+    }
+  };
   return (
     <>
       {/* DESKTOP HEADER */}
@@ -404,12 +404,12 @@ export const M2HeaderMobile = (props: HeaderProps) => {
               </a>
               <div className="css-1sg2lsz">
                 <div className="m2-icon css-ih24lg" style={{ width: '24px', height: '24px' }}>
-                  <a onClick={menufunc} href="javascript:void(0);" id="menu-icon">
+                  <a onClick={() => menufunc()} href="javascript:void(0);" id="menu-icon">
                     <div className="menu-div"></div>
                     <div className="menu-div"></div>
                     <div className="menu-div"></div>
                   </a>
-                  <a onClick={menufunc} id="cross-icon">
+                  <a onClick={() => menufunc()} id="cross-icon">
                     X
                   </a>
                 </div>
