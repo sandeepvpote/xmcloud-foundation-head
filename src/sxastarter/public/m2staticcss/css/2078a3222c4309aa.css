@@ -1791,6 +1791,7 @@ html[dir='rtl'] .rtl-rotate {
   }
 
   .desktop-header {
+    backdrop-filter: blur(6px);
     background: transparent;
     position: sticky;
     top: 0px;
