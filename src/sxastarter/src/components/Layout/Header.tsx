@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/no-unescaped-entities */
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Field,
   ImageField,
@@ -275,6 +275,10 @@ type HeaderProps = {
 export const M2HeaderMobile = (props: HeaderProps) => {
   const { sitecoreContext } = useSitecoreContext();
   //const [menu, setMenu] = useState();
+
+  useEffect(() => {
+    console.log('header clicked!');
+  });
 
   const menufunc = () => {
     console.log('on click');
