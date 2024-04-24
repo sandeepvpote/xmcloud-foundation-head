@@ -47,12 +47,12 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
         <link rel="stylesheet" href={`${publicUrl}/m2staticcss/css/subscribe.css`} />
 
         <noscript data-n-css=""></noscript>
-        <script
+        {/* <script
           defer
           src={`${publicUrl}/m2staticcss/scripts/chunks/polyfills-c67a75d1b6f99dc8.js`}
-        />
+        /> */}
         {/* <script defer src={`${publicUrl}/m2staticcss/scripts/chunks/webpack-1eec1d52731db2c1.js`} /> */}
-        <script
+        {/* <script
           defer
           src={`${publicUrl}/m2staticcss/scripts/chunks/framework-ca706bf673a13738.js`}
         />
@@ -79,12 +79,12 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
         <script
           defer
           src={`${publicUrl}/m2staticcss/scripts/ZO3nlBqB1GkksDxPVSh6E/_ssgManifest.js`}
-        />
+        /> */}
 
+        {/* <script defer src={`${publicUrl}/m2staticcss/scripts/chunks/polyfills.js`} />
         <script defer src={`${publicUrl}/m2staticcss/scripts/chunks/polyfills.js`} />
         <script defer src={`${publicUrl}/m2staticcss/scripts/chunks/polyfills.js`} />
-        <script defer src={`${publicUrl}/m2staticcss/scripts/chunks/polyfills.js`} />
-        <script defer src={`${publicUrl}/m2staticcss/scripts/chunks/polyfills.js`} />
+        <script defer src={`${publicUrl}/m2staticcss/scripts/chunks/polyfills.js`} /> */}
 
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
       </Head>
