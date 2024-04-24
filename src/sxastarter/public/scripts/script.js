@@ -50,24 +50,24 @@
   headerStyle();
 
   // header function
-  $('.menu-icon').on('click', function () {
-    console.log('on click');
-    const x = document.getElementById('menu-bar');
-    const menu = document.getElementById('menu-icon');
-    const cross = document.getElementById('cross-icon');
+  //   $('.menu-icon .cross-icon').on('click', function () {
+  //     console.log('on click');
+  //     const x = document.getElementById('menu-bar');
+  //     const menu = document.getElementById('menu-icon');
+  //     const cross = document.getElementById('cross-icon');
 
-    if (x && menu && cross) {
-      if (x.style.display === 'block') {
-        menu.style.display = 'block';
-        x.style.display = 'none';
-        cross.style.display = 'none';
-      } else {
-        x.style.display = 'block';
-        cross.style.display = 'block';
-        menu.style.display = 'none';
-      }
-    }
-  });
+  //     if (x && menu && cross) {
+  //       if (x.style.display === 'block') {
+  //         menu.style.display = 'block';
+  //         x.style.display = 'none';
+  //         cross.style.display = 'none';
+  //       } else {
+  //         x.style.display = 'block';
+  //         cross.style.display = 'block';
+  //         menu.style.display = 'none';
+  //       }
+  //     }
+  //   });
 
   /*------------------------------------------
         = Submenu Dropdown Toggle
