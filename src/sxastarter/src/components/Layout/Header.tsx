@@ -78,125 +78,243 @@ type HeaderProps = {
   fields: Fields;
 };
 
-export const Default = (props: HeaderProps) => {
-  const { sitecoreContext } = useSitecoreContext();
-  return (
-    <>
-      <header className="main-header header-style-one">
-        {/*Header-Main Box*/}
-        <div className="header-mainbox">
-          <div className="container ptn pbn">
-            <div className="clearfix">
-              <div className="logo-box">
-                <div className="logo">
-                  {sitecoreContext.pageState === 'edit' ? (
-                    <JssImage field={props.fields?.LightThemeLogo} className="img-responsive" />
-                  ) : (
-                    <JssLink field={props.fields.LogoLink}>
-                      <JssImage field={props.fields?.LightThemeLogo} />
-                    </JssLink>
-                  )}
-                </div>
-              </div>
-              <ul className="social-top list-inline">
-                {props.fields.TopHeaderNavLinks.map(
-                  (navigationLink: TopHeaderNavigationLink, key: number) => (
-                    <li
-                      key={key}
-                      className={
-                        key == 0 ? 'lang-item lang-item-72 lang-item-ar lang-item-first' : ''
-                      }
-                    >
-                      {sitecoreContext.pageState === 'edit' ? (
-                        <JssLink
-                          field={navigationLink.fields.Link}
-                          showLinkTextWithChildrenPresent={false}
-                        />
-                      ) : (
-                        <a
-                          href={navigationLink.fields.Link?.value?.href}
-                          className={navigationLink.fields.Link?.value?.class}
-                        ></a>
-                      )}
-                    </li>
-                  )
-                )}
-              </ul>
-              <div className="outer-box clearfix">
-                {/* Main Menu */}
-                <nav className="main-menu logo-outer">
-                  <div className="navbar-header">
-                    {/* Toggle Button */}
-                    <button
-                      type="button"
-                      className="navbar-toggle"
-                      data-toggle="collapse"
-                      data-target=".navbar-collapse"
-                    >
-                      <span className="icon-bar" />
-                      <span className="icon-bar" />
-                      <span className="icon-bar" />
-                    </button>
-                  </div>
-                  <div className="navbar-collapse collapse clearfix">
-                    <ul id="menu-home-menu" className="navigation clearfix">
-                      {props.fields.NavigationLinks.map((navigation, index: number) => (
-                        <>
-                          {navigation &&
-                          navigation.fields.SubMenuItems &&
-                          navigation.fields.SubMenuItems.length > 1 ? (
-                            <OneColumnNav
-                              Link={navigation.fields.Link}
-                              SubMenuItems={navigation.fields.SubMenuItems}
-                              index={index}
-                            ></OneColumnNav>
-                          ) : (
-                            <OneColumnNav
-                              Link={navigation.fields.Link}
-                              SubMenuItems={navigation.fields.SubMenuItems}
-                              index={index}
-                            ></OneColumnNav>
-                          )}
-                        </>
-                      ))}
-                    </ul>
-                  </div>
-                </nav>
-                {/* Main Menu End*/}
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*Header Main Box End*/}
-      </header>
-    </>
-  );
-};
+// export const Default = (props: HeaderProps) => {
+//   const { sitecoreContext } = useSitecoreContext();
+//   const menufunc = () => {
+//     console.log('on click');
+//     const x = document.getElementById('menu-bar');
+//     const menu = document.getElementById('menu-icon');
+//     const cross = document.getElementById('cross-icon');
 
-export const M2Header = (props: HeaderProps) => {
+//     if (x && menu && cross) {
+//       if (x.style.display === 'block') {
+//         menu.style.display = 'block';
+//         x.style.display = 'none';
+//         cross.style.display = 'none';
+//       } else {
+//         x.style.display = 'block';
+//         cross.style.display = 'block';
+//         menu.style.display = 'none';
+//       }
+//     }
+//   };
+//   return (
+//     <>
+//       {/* DESKTOP HEADER */}
+//       <header className="main-header header-style-one">
+//         {/*Header-Main Box*/}
+//         <div className="header-mainbox">
+//           <div className="container ptn pbn">
+//             <div className="clearfix">
+//               <div className="logo-box">
+//                 <div className="logo">
+//                   {sitecoreContext.pageState === 'edit' ? (
+//                     <JssImage field={props.fields?.LightThemeLogo} className="img-responsive" />
+//                   ) : (
+//                     <JssLink field={props.fields.LogoLink}>
+//                       <JssImage field={props.fields?.LightThemeLogo} />
+//                     </JssLink>
+//                   )}
+//                 </div>
+//               </div>
+//               <ul className="social-top list-inline">
+//                 {props.fields.TopHeaderNavLinks.map(
+//                   (navigationLink: TopHeaderNavigationLink, key: number) => (
+//                     <li
+//                       key={key}
+//                       className={
+//                         key == 0 ? 'lang-item lang-item-72 lang-item-ar lang-item-first' : ''
+//                       }
+//                     >
+//                       {sitecoreContext.pageState === 'edit' ? (
+//                         <JssLink
+//                           field={navigationLink.fields.Link}
+//                           showLinkTextWithChildrenPresent={false}
+//                         />
+//                       ) : (
+//                         <a
+//                           href={navigationLink.fields.Link?.value?.href}
+//                           className={navigationLink.fields.Link?.value?.class}
+//                         ></a>
+//                       )}
+//                     </li>
+//                   )
+//                 )}
+//               </ul>
+//               <div className="outer-box clearfix">
+//                 {/* Main Menu */}
+//                 <nav className="main-menu logo-outer">
+//                   <div className="navbar-header">
+//                     {/* Toggle Button */}
+//                     <button
+//                       type="button"
+//                       className="navbar-toggle"
+//                       data-toggle="collapse"
+//                       data-target=".navbar-collapse"
+//                     >
+//                       <span className="icon-bar" />
+//                       <span className="icon-bar" />
+//                       <span className="icon-bar" />
+//                     </button>
+//                   </div>
+//                   <div className="navbar-collapse collapse clearfix">
+//                     <ul id="menu-home-menu" className="navigation clearfix">
+//                       {props.fields.NavigationLinks.map((navigation, index: number) => (
+//                         <>
+//                           {navigation &&
+//                           navigation.fields.SubMenuItems &&
+//                           navigation.fields.SubMenuItems.length > 1 ? (
+//                             <OneColumnNav
+//                               Link={navigation.fields.Link}
+//                               SubMenuItems={navigation.fields.SubMenuItems}
+//                               index={index}
+//                             ></OneColumnNav>
+//                           ) : (
+//                             <OneColumnNav
+//                               Link={navigation.fields.Link}
+//                               SubMenuItems={navigation.fields.SubMenuItems}
+//                               index={index}
+//                             ></OneColumnNav>
+//                           )}
+//                         </>
+//                       ))}
+//                     </ul>
+//                   </div>
+//                 </nav>
+//                 {/* Main Menu End*/}
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         {/*Header Main Box End*/}
+//       </header>
+//     </>
+//   );
+// };
+
+// export const M2Header = (props: HeaderProps) => {
+//   const { sitecoreContext } = useSitecoreContext();
+//   return (
+//     <>
+//       <header className="css-pjfvhq">
+//         <div>
+//           <a aria-label="M2 Exchange" className="css-10oxagg" href="#">
+//             <div
+//               className="m2-icon undefined css-1i0n0ae"
+//               style={{ width: '74px', height: '24px' }}
+//               data-testid="logo"
+//             >
+//               {sitecoreContext.pageState === 'edit' ? (
+//                 <JssImage field={props.fields?.LightThemeLogo} className="img-responsive" />
+//               ) : (
+//                 <JssLink field={props.fields.LogoLink}>
+//                   <JssImage field={props.fields?.LightThemeLogo} />
+//                 </JssLink>
+//               )}
+//               {/* <svg fill="#08EBAA" width="74px" height="24px" className="css-1l3vixo">
+//                 <use xlinkHref="#icon-logo"></use>
+//               </svg> */}
+//             </div>
+//           </a>
+//         </div>
+//         <div className="css-upn7fq">
+//           {props.fields.NavigationLinks.map((navigation) => (
+//             <>
+//               <span className="css-156k2z1">
+//                 {sitecoreContext.pageState === 'edit' ? (
+//                   <JssLink field={navigation.fields.Link} />
+//                 ) : (
+//                   <a
+//                     data-testid={`menu-${navigation.fields.Link?.value?.text}}`}
+//                     href={navigation.fields.Link?.value?.href}
+//                     className={navigation.fields.Link?.value?.class}
+//                   >
+//                     <div className="css-1iyoj2o">
+//                       <div className="css-1sg2lsz">
+//                         <p className="css-lykmnt" color="typePrimary">
+//                           {navigation.fields.Link?.value?.text}
+//                         </p>
+//                       </div>
+//                     </div>
+//                   </a>
+//                 )}
+//               </span>
+//             </>
+//           ))}
+//         </div>
+
+//         <div className="css-1jssxcu">
+//           <div className="css-1v3z295">
+//             <a target="" className="css-1ulgukf" href="#">
+//               <span className="css-1gblbjx" color="text">
+//                 <JssText field={props.fields.CartText} />
+//               </span>
+//             </a>
+//             <button
+//               className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1q01leq"
+//               type="button"
+//             >
+//               <p className="css-195z8ju" data-testid="menu-login">
+//                 {props.fields.LoginLink?.value?.text}
+//               </p>
+//             </button>
+//             <button
+//               className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium register css-q0c041"
+//               type="button"
+//             >
+//               <p className="css-1uq6dkb" data-testid="menu-register">
+//                 {props.fields.MyProfileLink?.value?.text}
+//               </p>
+//             </button>
+//           </div>
+//         </div>
+//       </header>
+//     </>
+//   );
+// };
+
+export const M2HeaderMobile = (props: HeaderProps) => {
   const { sitecoreContext } = useSitecoreContext();
+  //const [menu, setMenu] = useState();
+
+  const menufunc = () => {
+    console.log('on click');
+    const x = document.getElementById('menu-bar');
+    const menu = document.getElementById('menu-icon');
+    const cross = document.getElementById('cross-icon');
+
+    if (x && menu && cross) {
+      if (x.style.display === 'block') {
+        menu.style.display = 'block';
+        x.style.display = 'none';
+        cross.style.display = 'none';
+      } else {
+        x.style.display = 'block';
+        cross.style.display = 'block';
+        menu.style.display = 'none';
+      }
+    }
+  };
   return (
     <>
-      <header className="css-pjfvhq">
+      {/* DESKTOP HEADER */}
+      <header className="desktop-header">
         <div>
-          <a aria-label="M2 Exchange" className="css-10oxagg" href="#">
-            <div
-              className="m2-icon undefined css-1i0n0ae"
-              style={{ width: '74px', height: '24px' }}
-              data-testid="logo"
-            >
-              {sitecoreContext.pageState === 'edit' ? (
-                <JssImage field={props.fields?.LightThemeLogo} className="img-responsive" />
-              ) : (
-                <JssLink field={props.fields.LogoLink}>
-                  <JssImage field={props.fields?.LightThemeLogo} />
-                </JssLink>
-              )}
-              {/* <svg fill="#08EBAA" width="74px" height="24px" className="css-1l3vixo">
-                <use xlinkHref="#icon-logo"></use>
-              </svg> */}
-            </div>
-          </a>
+          {/* <a aria-label="M2 Exchange" className="css-10oxagg" href="#"> */}
+          <section
+            className="m2-icon undefined css-1i0n0ae css-10oxagg"
+            style={{ width: '74px', height: '24px' }}
+            data-testid="logo"
+          >
+            {sitecoreContext.pageState === 'edit' ? (
+              <JssImage field={props.fields?.LightThemeLogo} className="img-responsive" />
+            ) : (
+              <JssLink field={props.fields.LogoLink}>
+                <JssImage field={props.fields?.LightThemeLogo} />
+              </JssLink>
+            )}
+          </section>
+          {/* </a> */}
         </div>
         <div className="css-upn7fq">
           {props.fields.NavigationLinks.map((navigation) => (
@@ -250,34 +368,7 @@ export const M2Header = (props: HeaderProps) => {
           </div>
         </div>
       </header>
-    </>
-  );
-};
-
-export const M2HeaderMobile = (props: HeaderProps) => {
-  //const { sitecoreContext } = useSitecoreContext();
-  //const [menu, setMenu] = useState();
-
-  const menufunc = () => {
-    console.log('on click');
-    const x = document.getElementById('menu-bar');
-    const menu = document.getElementById('menu-icon');
-    const cross = document.getElementById('cross-icon');
-
-    if (x && menu && cross) {
-      if (x.style.display === 'block') {
-        menu.style.display = 'block';
-        x.style.display = 'none';
-        cross.style.display = 'none';
-      } else {
-        x.style.display = 'block';
-        cross.style.display = 'block';
-        menu.style.display = 'none';
-      }
-    }
-  };
-  return (
-    <>
+      {/* MOBILE HEADER */}
       <header className="css-pjfvhq">
         <div>
           <a aria-label="M2 Exchange" className="css-10oxagg" href="#">
