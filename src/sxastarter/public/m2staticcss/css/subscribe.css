@@ -606,9 +606,9 @@ p:last-child {
   text-align: left;
   font-family: poppins-bold, sans-serif;
   position: absolute;
-  width: 86%;
-  padding-left: 330px;
-  padding-top: 80px;
+  width: 89%;
+  padding-left: 310px;
+  padding-top: 70px;
   line-height: 1;
 }
 
@@ -655,14 +655,14 @@ p:last-child {
     flex-direction: column;
   }
   .elevate-heading-text {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     align-items: center;
     padding-left: 0px;
     padding-top: 0px;
     margin-top: 70px;
     margin-bottom: 20px;
-    right: -5px;
+    right: -1px;
     width: 100%;
   }
   .coin-image {
@@ -995,4 +995,3 @@ p:last-child {
 
 @media (min-width: 321px) and (max-width: 768px) {
 }
-
