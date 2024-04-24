@@ -276,24 +276,24 @@ export const M2HeaderMobile = (props: HeaderProps) => {
   const { sitecoreContext } = useSitecoreContext();
   //const [menu, setMenu] = useState();
 
-  const menufunc = () => {
-    console.log('on click');
-    const x = document.getElementById('menu-bar');
-    const menu = document.getElementById('menu-icon');
-    const cross = document.getElementById('cross-icon');
+  // const menufunc = () => {
+  //   console.log('on click');
+  //   const x = document.getElementById('menu-bar');
+  //   const menu = document.getElementById('menu-icon');
+  //   const cross = document.getElementById('cross-icon');
 
-    if (x && menu && cross) {
-      if (x.style.display === 'block') {
-        menu.style.display = 'block';
-        x.style.display = 'none';
-        cross.style.display = 'none';
-      } else {
-        x.style.display = 'block';
-        cross.style.display = 'block';
-        menu.style.display = 'none';
-      }
-    }
-  };
+  //   if (x && menu && cross) {
+  //     if (x.style.display === 'block') {
+  //       menu.style.display = 'block';
+  //       x.style.display = 'none';
+  //       cross.style.display = 'none';
+  //     } else {
+  //       x.style.display = 'block';
+  //       cross.style.display = 'block';
+  //       menu.style.display = 'none';
+  //     }
+  //   }
+  // };
   return (
     <>
       {/* DESKTOP HEADER */}
@@ -393,12 +393,12 @@ export const M2HeaderMobile = (props: HeaderProps) => {
               </a>
               <div className="css-1sg2lsz">
                 <div className="m2-icon css-ih24lg" style={{ width: '24px', height: '24px' }}>
-                  <a onClick={() => menufunc()} href="javascript:void(0);" id="menu-icon">
+                  <a href="javascript:void(0);" id="menu-icon" className="menu-icon">
                     <div className="menu-div"></div>
                     <div className="menu-div"></div>
                     <div className="menu-div"></div>
                   </a>
-                  <a onClick={() => menufunc()} id="cross-icon">
+                  <a id="cross-icon" className="cross-icon">
                     X
                   </a>
                 </div>
