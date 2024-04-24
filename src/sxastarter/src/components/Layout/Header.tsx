@@ -13,7 +13,6 @@ import {
   Image as JssImage,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import { OneColumnNav } from './OneColumnNav';
 interface Fields {
   TopHeaderNavLinks: Array<TopHeaderNavigationLink>;
   WishListLink: LinkField;
