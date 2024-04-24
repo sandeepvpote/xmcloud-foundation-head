@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/no-unescaped-entities */
 'use client';
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
 import {
   Field,
   ImageField,
@@ -280,7 +280,7 @@ export const M2HeaderMobile = (props: HeaderProps) => {
   //   console.log('header clicked!');
   // });
 
-  const [menu, setMenu] = useState(false);
+  //const [menu, setMenu] = useState(false);
 
   // const menufunc = () => {
   //   console.log('On clicked');
